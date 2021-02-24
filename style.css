@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Londrina+Solid:wght@100;300&display=swap');
 
 body,
 html {
@@ -13,16 +14,27 @@ html {
   letter-spacing: 1px;
   line-height: 2em;
   background-color: black;
+  background-blend-mode: darken;
 }
+
+
+h2 {
+  font-family: "Londrina Outline", cursive;
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+
 
 .header {
   display: inline-block;
   width: 100%;
-  font-family: "Londrina Outline", cursive;
+  font-family: "Londrina outline", cursive;
   font-size: 120px;
   color: #fff;
   letter-spacing: 20px;
 }
+
+/* HEADER Components */ 
 
 .intro {
   font-size: 14px;
@@ -36,6 +48,7 @@ html {
   border-radius: 10px;
   border-color: rgb(110, 110, 110);
   background-color: transparent;
+  outline:none; 
 }
 
 .button .res-span {
@@ -55,8 +68,13 @@ html {
 .button:hover {
   border-color: #fff;
   transition: 1s;
-  box-shadow: 0 2px 20px 0 #15f4ee inset, 0 2px 20px 0 #15f4ee,
-    0 2px 20px 0 #15f4ee inset, 0 2px 20px 0 #15f4ee;
+  box-shadow: 0 2px 20px 0 #2415f4 inset, 0 2px 20px 0 #2415f4,
+      0 2px 20px 0 #2415f4 inset, 0 2px 20px 0 #2415f4;
+}
+
+a:hover {
+  transition: 1s;
+  color: #2415f4
 }
 
 .button .res-span:hover {
@@ -65,9 +83,10 @@ html {
   transition: 0.5s;
 }
 
+/* Parallax Images */ 
+
 .pimg1,
-.pimg2,
-.pimg3 {
+.pimg2 {
   position: relative;
   background-position: center;
   background-size: cover;
@@ -78,6 +97,7 @@ html {
   background-attachment: fixed;
 }
 
+
 .pimg1 {
   background-image: url(/assets/img/phil-botha-a0TJ3hy-UD8-unsplash.jpg);
   opacity: 0.3;
@@ -87,32 +107,72 @@ html {
 .pimg2 {
   background-image: url(/assets/img/pexels-negative-space-92905.jpg);
   min-height: 400px;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
-.pimg3 {
-  background-image: url(/assets/img/pexels-stefano-de-angelis-5151583.jpg);
-  min-height: 400px;
-  opacity: 0.9;
+
+/* About Me Section */ 
+
+.cards {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: auto;  
 }
 
-.section {
-  text-align: left;
-  padding: 50px 80px;
-  font-size: 16px;
+.card {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;  
 }
 
-.section-light {
-  background-color: #f4f4f4;
+.wrapper {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  max-width: 1242px;
+}
+
+.card-content {
+  color: #000;
+  background-color: white;
+  border: 1px solid #7d15f4;
+  border-radius: 10px;
+  border-color: rgb(110, 110, 110);
+  text-align: center;
+
+}
+
+.card-title {
+  font-size: 25px;
+  font-family: "Londrina solid", cursive;
+  font-weight: 300;
+  letter-spacing: 3px;
   color: #000;
 }
 
 .intro-image {
   max-width: 100%;
   height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Section Components */ 
+
+
+.section {
+  padding: 50px 80px;
+  font-size: 16px;
+}
+
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.center-title {
+  text-align: center;
+}
 
 .section-dark {
   background-color: #282e34;
@@ -130,7 +190,67 @@ html {
   text-transform: uppercase;
 }
 
+/* Skills and Tools Seciton */
+
+.list-items {
+  text-align: center;
+
+}
+
+/* Footer */ 
+
+.footer {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  display: grid;
+  text-decoration: none;
+  grid-column: 12fr;
+  grid-template-columns:  repeat(1, 12fr);
+  max-width: 1200px;
+  margin: auto;
+  
+  }
+
+  .background {
+    background-color: rgb(12, 1, 34);
+  background-image: url(/assets/img/jeremy-thomas-E0AHdsENmDg-unsplash.jpg);
+  background-position: center;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  }
+
+.linkedin img {
+
+  grid-column: 12fr;
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.email {
+  text-decoration: none;
+  grid-column: 12fr;
+  color: #fff;
+}
+
+.github {
+  text-decoration: none;
+  grid-column: 12fr;
+  color: #fff;
+}
+
+.myinfo {
+  line-height: 2em;
+  margin-top: 30px;
+}
+
+/* Media Queries */ 
+
 @media (max-width: 786px) {
+
   .ptext {
     top: 25%;
   }
@@ -143,8 +263,7 @@ html {
 
 @media (max-width: 468px) {
   .pimg1,
-  .pimg2,
-  .pimg3 {
+  .pimg2 {
     background-attachment: scroll;
   }
 
@@ -157,6 +276,11 @@ html {
     line-height: 80px;
     font-size: 80px;
   }
+
+  .list-items {
+    grid-template-columns: repeat(2, minmax(50px, 6fr));
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-height: 319px) {
@@ -167,13 +291,40 @@ html {
 
 @media(min-width: 700px) {
 
+  
+
   .grid {
       display: grid;
-      grid-template-columns:  1fr 2fr;
+      grid-template-columns:  repeat(12, 1fr);
       grid-gap: 1rem;
       max-width: 1200px;
       margin: auto;
       padding: 1.5rem;
+  }
+
+  .img-card {
+    grid-column: 1 / span 4;
+  }
+
+  .about-me {
+    grid-column: 5 / span 8;
+  }
+
+  .card-content {
+    padding: 2em;
+    margin: 3em;
+  }
+
+  .card-content:hover {
+    border-color: #fff;
+    transition: 1s;
+    box-shadow: 0 2px 20px 0 #2415f4 inset, 0 2px 20px 0 #2415f4,
+      0 2px 20px 0 #15f4ee inset, 0 2px 20px 0 #15f4ee;
+  }
+
+  .card {
+    display: flex;
+
   }
 
   h2 {
@@ -182,5 +333,56 @@ html {
     letter-spacing: 10px;
   }
 
+  .list-items {
+    grid-template-columns: repeat(6, minmax(100px, 2fr));
+    grid-gap: 2em;
+  }
+
 
 }
+
+
+@media(max-width: 1207px) {
+
+  .card-content {
+    padding: 1em;
+    margin: 2em;
+  }
+
+}
+
+@media(max-width: 882px) {
+
+  .card-content {
+    padding: 1em;
+    margin: 2em;
+  }
+  .pimg2 {
+    min-height: 550px;
+
+}
+}
+
+@media(max-width: 700px) {
+
+  .wrapper{
+    display: grid;
+  }
+
+  .pimg2 {
+    min-height: 975px;
+
+}
+}
+
+
+@media(max-width: 375px) {
+
+
+  .pimg2 {
+    min-height: 1050px;
+
+}
+} 
+
+
