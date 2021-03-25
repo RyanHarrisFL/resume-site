@@ -140,6 +140,7 @@ a:hover {
   border-radius: 10px;
   border-color: rgb(110, 110, 110);
   text-align: center;
+  flex: 0 1 20%;
 
 }
 
