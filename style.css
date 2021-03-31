@@ -254,7 +254,7 @@ a:hover {
 
 @media (max-width: 786px) {
   .ptext {
-    top: 25%;
+    top: 10%;
   }
 
   .header {
