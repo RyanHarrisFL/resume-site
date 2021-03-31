@@ -398,7 +398,7 @@ a:hover {
 
 @media screen and (width: 667px) and (height: 375px) {
   .header {
-    font-size: 70px;
+    font-size: 40px;
   }
   .ptext {
     top: 15%;
