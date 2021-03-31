@@ -1,4 +1,4 @@
 # resume-site
-Creating resume site using vanilla css and html 
+Resume site using vanilla css and html 
 
 
