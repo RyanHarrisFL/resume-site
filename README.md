@@ -1,2 +1,4 @@
 # resume-site
-Creating a personal site using parallax and grid layouts
+Creating resume site using vanilla css and html 
+
+
