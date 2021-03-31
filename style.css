@@ -394,11 +394,20 @@ a:hover {
   }
 }
 
+/* adjusting position of header for iphone */
+
+@media screen and (width: 667px) and (height 375px) {
+  .pimg1 {
+    min-height: 100%;
+  }
+}
+
 /* adjusting position of header for ipad */
 @media screen and (width: 768px) and (height: 1024px) {
   .ptext {
     top: 40%;
   }
+  
 }
 
 /* adjusting position of header for iphone x */
@@ -406,9 +415,7 @@ a:hover {
   .ptext {
     top: 25%;
   }
-  .pimg1 {
-    min-height: 100%;
-  }
+  
 }
 
 
