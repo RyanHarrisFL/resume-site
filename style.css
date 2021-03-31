@@ -375,11 +375,6 @@ a:hover {
     align-items: center;
   }
 
-  .header {
-    font-size: 50px;
-
-  }
-
 }
 
 @media (max-width: 540px) {
