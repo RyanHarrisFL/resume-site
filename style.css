@@ -406,6 +406,9 @@ a:hover {
   .ptext {
     top: 25%;
   }
+  .pimg1 {
+    min-height: 100%;
+  }
 }
 
 
