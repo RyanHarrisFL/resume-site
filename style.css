@@ -394,9 +394,9 @@ a:hover {
   }
 }
 
-/* adjusting position of header for iphone */
+/* adjusting position of header for iphone 6-8 */
 
-@media screen and (width: 667px) and (height 375px) {
+@media screen and (width: 667px) and (height: 375px) {
   .header {
     font-size: 30px;
   }
