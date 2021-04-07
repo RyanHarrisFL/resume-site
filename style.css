@@ -255,14 +255,6 @@ a:hover {
   }
 }
 
-@media (max-height: 450px) {
-
-  .ptext {
-    top: 10%;
-  }
-
-}
-
 @media (max-width: 786px) {
   .ptext {
     top: 25%;
@@ -310,6 +302,7 @@ a:hover {
   .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    justify-items: start;
     grid-gap: 1rem;
     max-width: 1200px;
     margin: auto;
@@ -317,11 +310,12 @@ a:hover {
   }
 
   .img-card {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 3;
+    margin-top: 32.2px;
   }
 
   .about-me {
-    grid-column: 5 / span 8;
+    grid-column: 4 / span 9;
   }
 
   .bio {
