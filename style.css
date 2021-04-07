@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Londrina+Solid:wght@100;300&display=swap");
 
@@ -28,7 +27,7 @@ h2 {
 .header {
   display: inline-block;
   width: 100%;
-  font-family: "Londrina outline", cursive;
+  font-family: 'Londrina Outline', cursive;
   font-size: 120px;
   color: #fff;
   letter-spacing: 20px;
